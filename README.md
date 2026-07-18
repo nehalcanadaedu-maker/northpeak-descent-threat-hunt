@@ -216,11 +216,8 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the Sentinel results showing the successful external `sancadmin` RDP event from `148.64.103.173`.
+<img width="1365" height="330" alt="image" src="https://github.com/user-attachments/assets/61e43aa0-1dcf-4aa7-b212-973bab69f5d8" />
 
-<!-- Example after upload:
-![Q01 successful external access](evidence/q01-successful-external-access.png)
--->
 
 ### Evidence and Analysis
 
@@ -267,9 +264,8 @@ DeviceLogonEvents
 | order by FirstSuccessfulAccess asc
 ```
 
-> **📸 Screenshot:** Add the ordered results showing `npt-ws01` as the earliest successful foothold.
+<img width="1217" height="268" alt="image" src="https://github.com/user-attachments/assets/20af8691-22b6-410b-a2f3-3a7599516b14" />
 
-<!-- ![Q02 foothold order](evidence/q02-foothold-order.png) -->
 
 ### Evidence and Analysis
 
@@ -317,9 +313,8 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result showing the remote device name `loranse`.
+<img width="1366" height="350" alt="image" src="https://github.com/user-attachments/assets/e67a9e4b-f0b5-403a-b760-b45c7876414d" />
 
-<!-- ![Q03 remote workstation](evidence/q03-remote-workstation.png) -->
 
 ### Evidence and Analysis
 
@@ -364,9 +359,8 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the `npt-srv01` result showing the external source and `RemoteInteractive` session.
+<img width="1290" height="326" alt="image" src="https://github.com/user-attachments/assets/ecfa1935-a593-4a78-9d73-af6f21938a50" />
 
-<!-- ![Q04 server access vector](evidence/q04-server-access-vector.png) -->
 
 ### Evidence and Analysis
 
@@ -408,9 +402,8 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the results showing the typo `sudo -1` followed by the valid command `sudo -l`.
+<img width="1288" height="95" alt="image" src="https://github.com/user-attachments/assets/7206b2b8-2bc4-4e7b-bac9-31ae550f5551" />
 
-<!-- ![Q05 sudo enumeration](evidence/q05-sudo-enumeration.png) -->
 
 ### Evidence and Analysis
 
@@ -448,9 +441,7 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result containing `timeout 2 bash -c "echo > /dev/tcp/10.2.0.10/3389"`.
-
-<!-- ![Q06 dev tcp reachability](evidence/q06-dev-tcp-reachability.png) -->
+<img width="1346" height="217" alt="image" src="https://github.com/user-attachments/assets/8743602d-ea45-4bdc-8d06-261c3e193ed7" />
 
 ### Evidence and Analysis
 
@@ -502,9 +493,8 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result showing `/usr/bin/python3 /usr/bin/pipx install netexec`.
+<img width="1370" height="315" alt="image" src="https://github.com/user-attachments/assets/75d50519-ddd9-424b-979c-87c441d3d69b" />
 
-<!-- ![Q07 netexec installation](evidence/q07-netexec-installation.png) -->
 
 ### Evidence and Analysis
 
@@ -562,9 +552,8 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result showing `sancadmin`, source `10.2.0.30`, target `npt-ws01`, and protocol `NTLM`.
+<img width="1392" height="320" alt="image" src="https://github.com/user-attachments/assets/b0ba6f17-5351-48ee-9d2d-be7e00843b62" />
 
-<!-- ![Q08 lateral movement](evidence/q08-lateral-movement.png) -->
 
 ### Evidence and Analysis
 
@@ -606,9 +595,8 @@ DeviceProcessEvents
 | order by Count asc
 ```
 
-> **📸 Screenshot:** Add the summarized results showing `explorer.exe` as the parent of the low-volume PowerShell activity.
+<img width="1357" height="350" alt="image" src="https://github.com/user-attachments/assets/e01da1aa-ab37-4ab6-b544-c20f81b68adc" />
 
-<!-- ![Q09 PowerShell lineage](evidence/q09-powershell-lineage.png) -->
 
 ### Evidence and Analysis
 
@@ -660,9 +648,8 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result showing `whoami.exe /groups` launched by PowerShell.
+<img width="1257" height="265" alt="image" src="https://github.com/user-attachments/assets/81022142-af7e-4e79-8572-6dd7c05675b4" />
 
-<!-- ![Q18 privilege validation](evidence/q18-privilege-validation.png) -->
 
 ### Evidence and Analysis
 
@@ -713,9 +700,7 @@ DeviceRegistryEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the registry event showing the `NorthpeakSyncTray` value and full PowerShell command.
-
-<!-- ![Q10 registry persistence](evidence/q10-registry-persistence.png) -->
+<img width="1347" height="268" alt="image" src="https://github.com/user-attachments/assets/98edeb4b-1a1c-4dd3-b097-949513e1f5fa" />
 
 ### Evidence
 
@@ -775,9 +760,8 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the ordered results showing `status`, `updates`, and `cdn` subdomains in PowerShell command lines.
+<img width="1117" height="302" alt="image" src="https://github.com/user-attachments/assets/3f26093a-2302-4921-aaf0-4bae1f6ae77c" />
 
-<!-- ![Q11 beacon domains](evidence/q11-beacon-domains.png) -->
 
 ### Evidence
 
@@ -824,9 +808,7 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the result showing the suspicious `-EncodedCommand` event at `23:19:22 UTC`.
-
-<!-- ![Q12 encoded beacon](evidence/q12-encoded-beacon.png) -->
+<img width="1367" height="350" alt="image" src="https://github.com/user-attachments/assets/cc93cb86-e2f1-4469-9cea-6abe0ecea575" />
 
 ### Encoded Command
 
@@ -885,9 +867,7 @@ DeviceProcessEvents
 | order by Count desc
 ```
 
-> **📸 Screenshot:** Add the summarized results comparing `gc_worker.exe` with attacker-controlled `powershell.exe` parentage.
-
-<!-- ![Q13 encoded command discrimination](evidence/q13-encoded-command-discrimination.png) -->
+<img width="1367" height="180" alt="image" src="https://github.com/user-attachments/assets/168e5ef8-9967-4bde-a550-c84e459a2634" />
 
 ### Evidence and Analysis
 
@@ -937,9 +917,8 @@ DeviceProcessEvents
 | extend IntervalSeconds=datetime_diff("second", TimeGenerated, PreviousTime)
 ```
 
-> **📸 Screenshot:** Add the ordered status-domain check-ins and calculated interval.
-
-<!-- ![Q14 beacon rhythm](evidence/q14-beacon-rhythm.png) -->
+<img width="970" height="207" alt="image" src="https://github.com/user-attachments/assets/14896b00-c3db-4089-a610-16a4f8a86358" />
+<img width="1336" height="202" alt="image" src="https://github.com/user-attachments/assets/3a1bb34c-b839-4167-a60a-88105a3c8961" />
 
 ### Evidence and Analysis
 
@@ -999,9 +978,7 @@ DeviceProcessEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the `23:44:08 UTC` PowerShell upload event from `npt-srv01`.
-
-<!-- ![Q15 data exfiltration](evidence/q15-data-exfiltration.png) -->
+<img width="1376" height="327" alt="image" src="https://github.com/user-attachments/assets/4c0d6f3e-4cfa-42f8-ac88-7a21fc4253a7" />
 
 ### Evidence
 
@@ -1057,9 +1034,8 @@ DeviceLogonEvents
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add both `RemoteInteractive` server sessions, especially the second event at approximately `23:42:52 UTC`.
+<img width="1115" height="277" alt="image" src="https://github.com/user-attachments/assets/dd50f729-3201-421b-b790-dfe0b01181b3" />
 
-<!-- ![Q16 session correlation](evidence/q16-session-correlation.png) -->
 
 ### Evidence and Analysis
 
@@ -1124,9 +1100,8 @@ union isfuzzy=true
 | order by TimeGenerated asc
 ```
 
-> **📸 Screenshot:** Add the empty or non-malicious result set demonstrating no identified security-control tampering.
+<img width="1392" height="345" alt="image" src="https://github.com/user-attachments/assets/e41e6bf6-d1ba-4112-90c9-3c17108988e6" />
 
-<!-- ![Q17 no defense tampering](evidence/q17-no-defense-tampering.png) -->
 
 ### Evidence and Analysis
 
